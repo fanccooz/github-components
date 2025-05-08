@@ -1,6 +1,6 @@
 import { defineComponent as r, createElementBlock as s, openBlock as l, normalizeClass as a, renderSlot as i } from "vue";
 const p = /* @__PURE__ */ r({
-  __name: "Button",
+  __name: "MyButton",
   props: {
     color: {}
   },
@@ -21,7 +21,7 @@ const p = /* @__PURE__ */ r({
   for (const [c, o] of n)
     t[c] = o;
   return t;
-}, d = /* @__PURE__ */ _(p, [["__scopeId", "data-v-795e0a1b"]]);
+}, d = /* @__PURE__ */ _(p, [["__scopeId", "data-v-195bf660"]]);
 export {
-  d as Button
+  d as MyButton
 };

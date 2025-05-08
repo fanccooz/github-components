@@ -1,4 +1,3 @@
-// vite.config.ts
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
@@ -6,7 +5,13 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   plugins: [
     vue(),
-    dts({ insertTypesEntry: true }), // 生成 .d.ts 文件
+    dts({
+      include: ['src/**/*.vue', 'src/**/*.ts'],
+      outDir: 'dist',
+      insertTypesEntry: true,
+      staticImport: true,
+      rollupTypes: true
+    }),
   ],
   build: {
     lib: {
