@@ -12,7 +12,11 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "preserve",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vite/client"],
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

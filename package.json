@@ -1,7 +1,7 @@
 {
   "name": "@fanccooz/github-components",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
@@ -26,7 +26,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^13.1.0",
+    "interactjs": "^1.10.27",
+    "lodash": "^4.17.21",
     "pinia": "^3.0.1",
+    "sass": "^1.87.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
