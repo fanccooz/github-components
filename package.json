@@ -1,16 +1,25 @@
 {
-  "name": "my-component-lib",
+  "name": "@fanccooz/github-components",
   "private": true,
   "version": "1.0.0",
-  "main": "./dist/my-component-lib.umd.js",
-  "module": "./dist/my-component-lib.es.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
+  "style": "./dist/index.css",
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": {
-      "import": "./dist/my-component-lib.es.js",
-      "require": "./dist/my-component-lib.umd.js"
+      "types": "./dist/index.d.ts",
+      "style": "./dist/index.css",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
