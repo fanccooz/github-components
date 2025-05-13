@@ -1,14 +1,12 @@
 <template>
   <div class="doc-container">
     <h1>DragResizeGrid 可拖拽调整大小的网格</h1>
-    <p class="description">
-      一个支持拖拽调整大小的网格组件，可以用于构建可自定义的布局系统。
-    </p>
+    <p class="description">一个支持拖拽调整大小的网格组件，可以用于构建可自定义的布局系统。</p>
 
     <section class="demo-section">
       <h2>基础用法</h2>
       <div class="demo-block">
-        <DragResizeGrid :value="[]">
+        <DragResizeGrid :value="dragData">
           <template #cell="{ row, col }">
             <div class="grid-cell">单元格 {{ row }}-{{ col }}</div>
           </template>
@@ -106,24 +104,23 @@
 </template>
 
 <script setup lang="ts">
-  import { DragResizeGrid } from "@/components";
-  import CardComponent from "./components/Card.vue";
-  import { ref, markRaw } from "vue";
+  import { DragResizeGrid } from '@/components'
+  import CardComponent from './components/Card.vue'
 
   const dragData = ref([
     {
-      component: markRaw(CardComponent),
+      component: markRaw(CardComponent)
     },
     {
-      component: markRaw(CardComponent),
+      component: markRaw(CardComponent)
     },
     {
-      component: markRaw(CardComponent),
+      component: markRaw(CardComponent)
     },
     {
-      component: markRaw(CardComponent),
-    },
-  ]);
+      component: markRaw(CardComponent)
+    }
+  ])
 
   const basicUsage = `<template>
     <DragResizeGrid
@@ -139,7 +136,7 @@
         </div>
       </template>
     </DragResizeGrid>
-  </template>`;
+  </template>`
 
   const customContent = `<template>
     <DragResizeGrid
@@ -157,7 +154,7 @@
         </div>
       </template>
     </DragResizeGrid>
-  </template>`;
+  </template>`
 </script>
 
 <style lang="scss" scoped>
@@ -202,7 +199,7 @@
     pre {
       margin: 0;
       code {
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
       }
     }
   }

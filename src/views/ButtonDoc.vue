@@ -124,14 +124,13 @@ const handleClick = () => {
 </template>
 
 <script setup lang="ts">
-  import { MyButton } from "../components";
-
-  const clickCount = ref(0);
+  import { MyButton } from '../components'
+  const clickCount = ref(0)
 
   const handleClick = () => {
-    clickCount.value++;
-    console.log("按钮被点击了！");
-  };
+    clickCount.value++
+    console.log('按钮被点击了！')
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -190,7 +189,7 @@ const handleClick = () => {
         pre {
           margin: 0;
           code {
-            font-family: Consolas, Monaco, "Andale Mono", monospace;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
             font-size: 14px;
             color: #333;
           }
