@@ -1,7 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import DocLayout from '../views/DocLayout.vue';
-import ButtonDoc from '../views/ButtonDoc.vue';
-import DragResizeGridDoc from '../views/DragResizeGridDoc/index.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import DocLayout from '../views/DocLayout.vue'
+import ButtonDoc from '../views/ButtonDoc.vue'
+import DragResizeGridDoc from '../views/DragResizeGridDoc/index.vue'
+import Bpmn from '../views/Bpmn/index.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -21,10 +22,14 @@ const router = createRouter({
         {
           path: '/drag-resize-grid',
           component: DragResizeGridDoc
+        },
+        {
+          path: '/bpmn',
+          component: Bpmn
         }
       ]
     }
   ]
-});
+})
 
-export default router; 
+export default router

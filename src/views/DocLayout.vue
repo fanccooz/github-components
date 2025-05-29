@@ -11,9 +11,11 @@
         </div>
         <div class="menu-group">
           <div class="menu-title">布局组件</div>
-          <router-link to="/drag-resize-grid" class="menu-item"
-            >Grid 栅格</router-link
-          >
+          <router-link to="/drag-resize-grid" class="menu-item">Grid 栅格</router-link>
+        </div>
+        <div class="menu-group">
+          <div class="menu-title">流程组件</div>
+          <router-link to="/bpmn" class="menu-item">BPMN 流程图</router-link>
         </div>
       </nav>
     </aside>
